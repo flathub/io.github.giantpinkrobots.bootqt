@@ -33,15 +33,17 @@ modules:
       - install -D -m755 io.github.giantpinkrobots.bootqt.metainfo.xml /app/share/metainfo/
       - install -D -m755 bqi18n/da.py -t /app/lib/bootqt/
       - install -D -m755 bqi18n/de.py -t /app/lib/bootqt/
+      - install -D -m755 bqi18n/it.py -t /app/lib/bootqt/
       - install -D -m755 bqi18n/tr.py -t /app/lib/bootqt/
       - mkdir /app/lib/bootqt/bqi18n
       - mv /app/lib/bootqt/da.py /app/lib/bootqt/bqi18n/da.py
       - mv /app/lib/bootqt/de.py /app/lib/bootqt/bqi18n/de.py
+      - mv /app/lib/bootqt/it.py /app/lib/bootqt/bqi18n/it.py
       - mv /app/lib/bootqt/tr.py /app/lib/bootqt/bqi18n/tr.py
     
     sources:
       - type: git
         url: https://github.com/giantpinkrobots/bootqt.git
-        commit: 449058f65c9287d5bb238fb288723c9dc6b3aae7
+        commit: 3df668e15c8946a2c75335d39481d7111b55f121
       - type: file
         path: io.github.giantpinkrobots.bootqt.metainfo.xml
