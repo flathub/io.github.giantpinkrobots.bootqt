@@ -13,7 +13,7 @@
 
   <description>
     <p>
-      Bootqt is a lightweight application that allows you to quickly create bootable drives from image files such as iso. It uses the dd tool to image the drive. It is written in Python and uses the Qt framework to provide a straightforward graphical user interface that everyone can use. The source code of Bootqt is publicly available.
+      Bootqt is a lightweight application that allows you to quickly create bootable drives from image files such as iso. It uses the dd tool to image the drive. It is written in Python and uses the Qt framework to provide a straightforward graphical user interface that everyone can use. The source code of Bootqt is publicly available.<br /><br />Bootqt supports these languages:<br />- Danish (Dansk)<br />- German (Deutsch)<br />- Turkish (Türkçe)<br /><br />*** Bootqt uses the pkexec tool to get admin privileges as of now. Starting with Fedora 37, pkexec will probably come as a "recommended" package. I will try to move to some other solution before it gets deprecated. ***
     </p>
   </description>
 
@@ -28,9 +28,9 @@
   </screenshots>
 
   <releases>
-    <release version="0.3" date="2022-05-18">
+    <release version="v2022.5.31" date="2022-05-31">
       <description>
-        <p>Version 0.3</p>
+        <p>New translations added and the logo is now symmetrical.</p>
       </description>
     </release>
   </releases>
