@@ -37,9 +37,9 @@ Bootqt supports these languages: English, Danish (Dansk), German (Deutsch), Ital
 </screenshots>
 
 <releases>
-<release version="v2023.2.17-1" date="2022-02-17">
+<release version="v2023.9.30" date="2022-09-30">
 <description>
-<p>Bug fixes made, new icon added.</p>
+<p>Bug fixes and a more accurate progress bar.</p>
 </description>
 </release>
 </releases>
