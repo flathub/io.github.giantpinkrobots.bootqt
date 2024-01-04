@@ -1,9 +1,9 @@
 app-id: io.github.giantpinkrobots.bootqt
 runtime: org.kde.Platform
-runtime-version: '5.15-22.08'
+runtime-version: '5.15-23.08'
 sdk: org.kde.Sdk
 base: com.riverbankcomputing.PyQt.BaseApp
-base-version: 5.15-22.08
+base-version: '5.15-23.08'
 
 command: bootqt.sh
 
@@ -44,6 +44,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/giantpinkrobots/bootqt.git
-        commit: 064ee2c62b3cb700e7b478068f8334b887d8373a
+        commit: 7e7546f32d8dc899561588a516fabe8e3dd01ded
       - type: file
         path: io.github.giantpinkrobots.bootqt.metainfo.xml
