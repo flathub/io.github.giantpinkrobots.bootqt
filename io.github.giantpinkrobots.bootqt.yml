@@ -1,9 +1,9 @@
 app-id: io.github.giantpinkrobots.bootqt
 runtime: org.kde.Platform
-runtime-version: '6.9'
+runtime-version: '6.10'
 sdk: org.kde.Sdk
 base: io.qt.PySide.BaseApp
-base-version: '6.9'
+base-version: '6.10'
 
 command: bootqt.sh
 
@@ -35,15 +35,19 @@ modules:
       - install -D -m755 bqi18n/de.py -t /app/lib/bootqt/
       - install -D -m755 bqi18n/it.py -t /app/lib/bootqt/
       - install -D -m755 bqi18n/tr.py -t /app/lib/bootqt/
+      - install -D -m755 bqi18n/ptbr.py -t /app/lib/bootqt/
+      - install -D -m755 bqi18n/ja.py -t /app/lib/bootqt/
       - mkdir /app/lib/bootqt/bqi18n
       - mv /app/lib/bootqt/da.py /app/lib/bootqt/bqi18n/da.py
       - mv /app/lib/bootqt/de.py /app/lib/bootqt/bqi18n/de.py
       - mv /app/lib/bootqt/it.py /app/lib/bootqt/bqi18n/it.py
       - mv /app/lib/bootqt/tr.py /app/lib/bootqt/bqi18n/tr.py
+      - mv /app/lib/bootqt/ptbr.py /app/lib/bootqt/bqi18n/ptbr.py
+      - mv /app/lib/bootqt/ja.py /app/lib/bootqt/bqi18n/ja.py
     
     sources:
       - type: git
         url: https://github.com/giantpinkrobots/bootqt.git
-        commit: ac0ced966eecc2f9e8e5205a10e7be84bf52f573
+        commit: 87d122f19ac47a03c95dd8928402f10e4a6fc88a
       - type: file
         path: io.github.giantpinkrobots.bootqt.metainfo.xml
