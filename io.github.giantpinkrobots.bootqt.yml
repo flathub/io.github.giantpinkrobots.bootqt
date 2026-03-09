@@ -25,25 +25,18 @@ modules:
   - name: bootqt
     buildsystem: simple
     build-commands:
-      - install -D -m755 flatpak/bootqt.sh -t /app/bin
-      - install -D -m755 bootqt.py -t /app/lib/bootqt
-      - install -D -m755 flatpak/io.github.giantpinkrobots.bootqt.png -t /app/share/icons/hicolor/256x256/apps
-      - install -D -m755 flatpak/io.github.giantpinkrobots.bootqt.png /app/lib/bootqt/bqlogo.png
-      - install -D -m755 flatpak/io.github.giantpinkrobots.bootqt.desktop -t /app/share/applications
-      - install -D -m755 io.github.giantpinkrobots.bootqt.metainfo.xml /app/share/metainfo/
-      - install -D -m755 bqi18n/da.py -t /app/lib/bootqt/
-      - install -D -m755 bqi18n/de.py -t /app/lib/bootqt/
-      - install -D -m755 bqi18n/it.py -t /app/lib/bootqt/
-      - install -D -m755 bqi18n/tr.py -t /app/lib/bootqt/
-      - install -D -m755 bqi18n/ptbr.py -t /app/lib/bootqt/
-      - install -D -m755 bqi18n/ja.py -t /app/lib/bootqt/
-      - mkdir /app/lib/bootqt/bqi18n
-      - mv /app/lib/bootqt/da.py /app/lib/bootqt/bqi18n/da.py
-      - mv /app/lib/bootqt/de.py /app/lib/bootqt/bqi18n/de.py
-      - mv /app/lib/bootqt/it.py /app/lib/bootqt/bqi18n/it.py
-      - mv /app/lib/bootqt/tr.py /app/lib/bootqt/bqi18n/tr.py
-      - mv /app/lib/bootqt/ptbr.py /app/lib/bootqt/bqi18n/ptbr.py
-      - mv /app/lib/bootqt/ja.py /app/lib/bootqt/bqi18n/ja.py
+      - install -Dm755 flatpak/bootqt.sh -t /app/bin/
+      - install -Dm755 bootqt.py -t /app/lib/bootqt/
+      - install -Dm755 flatpak/${FLATPAK_ID}.png -t /app/share/icons/hicolor/256x256/apps
+      - install -Dm755 flatpak/${FLATPAK_ID}.png -t /app/lib/bootqt/
+      - install -Dm755 flatpak/${FLATPAK_ID}.desktop -t /app/share/applications
+      - install -Dm755 ${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo/
+      - install -Dm755 bqi18n/da.py -t /app/lib/bootqt/bqi18n/
+      - install -Dm755 bqi18n/de.py -t /app/lib/bootqt/bqi18n/
+      - install -Dm755 bqi18n/it.py -t /app/lib/bootqt/bqi18n/
+      - install -Dm755 bqi18n/ja.py -t /app/lib/bootqt/bqi18n/
+      - install -Dm755 bqi18n/ptbr.py -t /app/lib/bootqt/bqi18n/
+      - install -Dm755 bqi18n/tr.py -t /app/lib/bootqt/bqi18n/
     
     sources:
       - type: git
