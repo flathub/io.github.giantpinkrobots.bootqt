@@ -17,6 +17,9 @@ finish-args:
 
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
+  - rm -rf /app/lib/python3.*/site-packages/OpenGL
+  - rm -rf /app/lib/python3.*/site-packages/PySide6/examples
+  - rm -rf /app/lib/python3.*/site-packages/pyside6_examples*
 build-options:
   env:
     - BASEAPP_REMOVE_WEBENGINE=1
