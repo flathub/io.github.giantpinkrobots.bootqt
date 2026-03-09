@@ -48,6 +48,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/giantpinkrobots/bootqt.git
-        commit: 87d122f19ac47a03c95dd8928402f10e4a6fc88a
+        commit: d06d4eed9f3b4e16fdbce28e7cee6b29320cb5c6
       - type: file
         path: io.github.giantpinkrobots.bootqt.metainfo.xml
